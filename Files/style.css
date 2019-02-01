@@ -3,12 +3,12 @@ body {
     justify-content: center;
 }
 #container {
-    background: rgb(106, 111, 114);
+    background: rgb(111, 175, 214);
     align-content: center;
     width: 305px;
 }
 form {
-    border: 2px solid rgb(104, 110, 114);
+    border: 2px solid rgb(136, 180, 207);
     margin: auto;
     padding-left: 10px;
 }
@@ -23,15 +23,18 @@ form {
 #label {
     text-align: right;
     margin-right: 12px;
-    color: rgb(239, 243, 245);
+    color: rgb(227, 238, 243);
 }
 .buttons{
     display: flex;
     flex-wrap: wrap;
 }
 input[type="button"], input[type="reset"] {
+    border: 1px solid rgb(111, 175, 214);
     width: 70px;
     height: 40px;
+    background: rgb(54, 118, 158);
+    color: rgb(245, 242, 237);
 }
 img {
     width: 15px;
