@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+#container {
+    background: rgb(106, 111, 114);
+    align-content: center;
+    width: 305px;
+}
+form {
+    border: 2px solid rgb(104, 110, 114);
+    margin: auto;
+    padding-left: 10px;
+}
+#screen {
+    margin-top: 30px;
+    width: 278px;
+    height: 55px;
+    text-align: right;
+    font-size: 34px;
+    border-radius: 0px;
+}
+#label {
+    text-align: right;
+    margin-right: 12px;
+    color: rgb(239, 243, 245);
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type="button"], input[type="reset"] {
+    width: 70px;
+    height: 40px;
+}
+img {
+    width: 15px;
+    height: 15px;
+    
+}
+#designer {
+    text-align: center;
+    align-content: center;
+    color: rgb(203, 217, 228);
+}

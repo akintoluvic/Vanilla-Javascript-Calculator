@@ -3,37 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <title>My Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <form action="">
+    <div  id="container">
+        <form name="calculator" action="">
+            <!-- The Display -->
             <div>
-                <input type="text">
+                <input type="text" name="ans" id="screen" value="">
             </div>
+            <!-- The Label -->
             <div>
-                <p>Vanilla Javascript Calculator</p>
+                <p id="label">Vanilla Javascript Calculator</p>
             </div>
-            <div>
-                <input type="button" value="">
-                <input type="button" value="">
-                <input type="button" value="">
-                <input type="button" value=""><br>
-                <input type="button" value="">
-                <input type="button" value="">
-                <input type="button" value="">
-                <input type="button" value=""><br>
-                <input type="button" value="">
-                <input type="button" value="">
-                <input type="button" value="">
-                <input type="button" value=""><br>
-                <input type="button" value="">
-                <input type="button" value="">
-                <input type="button" value="">
-                <input type="button" value="">
+            <!-- The Buttons -->   
+            <div class="buttons">
+                <input type="reset" id="clear" value="Reset">
+                <input type="button" id="square" value="²" onclick="document.calculator.ans.value = Math.pow(document.calculator.ans.value, 2)">
+                <input type="button" id="root" value="√" onclick="document.calculator.ans.value = Math.sqrt(document.calculator.ans.value)">
+                <input type="button" id="back" value="←" onclick="document.calculator.ans.value = parseFloat(document.calculator.ans.value.toString().slice(0, -1))"><br>
+                <input type="button" value="7" onclick="document.calculator.ans.value+= '7'">
+                <input type="button" value="8" onclick="document.calculator.ans.value+= '8'">
+                <input type="button" value="9" onclick="document.calculator.ans.value+= '9'">
+                <input type="button" value="/" onclick="document.calculator.ans.value+= '/'"><br>
+                <input type="button" value="4" onclick="document.calculator.ans.value+= '4'">
+                <input type="button" value="5" onclick="document.calculator.ans.value+= '5'">
+                <input type="button" value="6" onclick="document.calculator.ans.value+= '6'">
+                <input type="button" value="x" onclick="document.calculator.ans.value+= '*'"><br>
+                <input type="button" value="1" onclick="document.calculator.ans.value+= '1'">
+                <input type="button" value="2" onclick="document.calculator.ans.value+= '2'">
+                <input type="button" value="3" onclick="document.calculator.ans.value+= '3'">
+                <input type="button" value="-" onclick="document.calculator.ans.value+= '-'"><br>
+                <input type="button" value="0" onclick="document.calculator.ans.value+= '0'">
+                <input type="button" value="." onclick="document.calculator.ans.value+= '.'">
+                <input type="button" id="equal" value="=" onclick="document.calculator.ans.value = eval(document.calculator.ans.value)">
+                <input type="button" value="+" onclick="document.calculator.ans.value+= '+'">
 
+            </div>
+            <!-- My name and Social Handles -->
+            <div>
+                <p id="designer"><img src="twitter.png" alt=""> @akintoluvic</p>
             </div>
         </form>
     </div>
+
+    <script>
+    //    function inputGenerate(elmnt, value) {
+    //        // Setting up the screen
+
+    //         var y = elmnt.value;
+         
+    //         screen = document.getElementById("screen").value = y;
+
+    //         return screen;
+
+    //    }
+
+    //    function backspace() {
+    //        var z = document.calculator.ans.value.toString();
+    //        let y = z.slice(0, -1);
+    //        return  document.calculator.ans.value = parseFloat(y);
+    //    }
+
+       
+
+
+      
+
+
+    </script>
+
+
+<!-- Rubbish -->
+
+
+
 
 
 </body>
